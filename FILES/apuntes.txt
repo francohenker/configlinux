@@ -1,0 +1,2 @@
+bspwm, sxhkd, picom, polybar bajo el directorio ~/.config
+.p10k.zsh en el directorio personal del usuario
