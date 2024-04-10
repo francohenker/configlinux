@@ -1,6 +1,6 @@
 # Debian-based systems desktop enviroment configuration files
 
-Described files for bspwm
+Description of the files for the desktop environment
 -
 Used programs:
 - Bspwm 
