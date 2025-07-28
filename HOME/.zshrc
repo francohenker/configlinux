@@ -5,10 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 #source ~/zsh-autocomplete/zsh-autocomplete.plugin.zsh
-source /usr/share/zsh-plugins/sudo.plugin.zsh
+source ~/zsh/sudo.plugin.zsh
 
 # Fix the Java Problem
 export _JAVA_AWT_WM_NONREPARENTING=1
@@ -105,9 +105,9 @@ preexec () { print -Pn "\e]0;$1 - Parrot Terminal\a" }
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /home/saika/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/donpal/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-rm -r  ~/.zsh_history
+rm -r  ~/.zsh_history 2>&/dev/null
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
