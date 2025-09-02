@@ -55,6 +55,8 @@ alias cat='/bin/bat'
 alias catn='/bin/cat'
 alias catnl='/bin/bat --paging=never'
 
+#alias kitty display picture
+alias kittys='/usr/bin/kitty +kitten icat'
 # Functions
 function mkt(){
     mkdir {nmap,content,exploits,scripts}
@@ -124,3 +126,4 @@ bindkey '\e[H' beginning-of-line
 bindkey '\e[F' end-of-line
 bindkey '\e[1~' beginning-of-line
 bindkey '\e[4~' end-of-line
+bindkey "\e[3~" delete-char
